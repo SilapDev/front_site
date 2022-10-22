@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Jquery</title>
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link rel="stylesheet" href="css/ball_animations.css" type="text/css">
+    <link rel="stylesheet" href="css/likely3.css" type="text/css">
+    <script src="./js/jquery.js"></script>
+    <script src="./js/likely5.js"></script>
+    <script src="./js/scripts.js"></script>
+</head>
+<body>
+
+<a href="#" class="c-block">
+	<div>
+	<div class="c-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus, aperiam!</div>
+	<div class="c-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, asperiores tempore?</div>
+	</div>
+</a>
+
+<!--  Главный блок  -->
+
+<div id="wrapper">
+
+    <!-- блок с рисунком  -->
+
+    <div class="img"></div>
+    <a href="#" class="mini"></a>
+
+    <!-- Звуковой панель -->
+
+    <div class="option_panel">
+        <div class="volume">
+            <div class="firstvolume active"></div>
+            <div class="secondvolume"></div>
+            <div class="thirdvolume"></div>
+        </div>
+    </div>
+
+    <!-- Начало упражнений -->
+
+    <div class="first exercise active">
+        <div class="primary_block">
+            <div style="clear:both;"></div>
+            <div class="navi_block">
+                    <h1 id="start" class="button">
+                        <span class="ru">Начать зарядку для глаз</span>
+                    </h1>
+                <div class="nav" style="white-space: nowrap">
+                    <ul>
+                        <li>
+                            <a href="">
+                               <span class="ru">Рекомендации</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Инструкции -->
+
+    <div class="exercise height instruction_block" data-time="100500">
+        <div class="title">
+            <span class="ru">Рекомендации</span>
+        </div>
+        <div class="text">
+        <div class="ru">
+            <p>В комплексе набор упражнений, во время которых нужно смотреть в направления, указываемые точкой.</p>
+            <p>Точка показывает только направление — взгляд перемещайте до упора, но не сильно.</p>
+            <p>В крайних точках задерживайте взгляд на секунду.</p>
+            <p>После выполнения каждого упражнения можно легонько зажмуриться или поморгать пару секунд – это помогает расслабиться глазам.</p>
+            <p>Общее время упражнения: 3 минуты 25 секунд.</p>
+        </div>
+        </div>
+        <div class="nav_info">
+            <a href="#" class="continue button">
+                <span class="ru">Начать</span>
+            </a>
+        </div>
+    </div>
+    <div class="exercise height" data-time="20">
+      <div class="parent_animator relax"></div>
+        <div class="title">
+            <span class="ru">Расслабьтесь</span>
+            <div class="timer"></div>
+        </div>
+        <div class="ex_text">
+            <span class="ru">
+                Закройте глаза до сигнала
+            </span>
+        </div>
+    </div>
+    <div class="exercise height" data-time="20">
+      <div class="parent_animator up_down"></div>
+        <div class="title">
+            <span class="ru">Вверх−вниз</span>
+            <div class="timer"></div>
+        </div>
+        <div class="ex_text">
+            <span class="ru">
+                На секунду задерживайте взгляд в верхней и нижней точках
+            </span>
+        </div>
+    </div>
+    <div class="exercise height" data-time="10">
+        <div class="title">
+             <span class="ru">Помигайте глазами</span>
+            <div class="timer"></div>
+        </div>
+        <div class="ex_text">
+            <span class="ru">
+                Помигайте глазами или прикройте ладонями до сигнала
+            </span>
+        </div>
+    </div>
+    <div class="exercise height" data-time="20">
+      <div class="parent_animator left_right"></div>
+        <div class="title">
+            <span class="ru">Влево−вправо</span>
+            <div class="timer"></div>
+        </div>
+        <div class="ex_text">
+            <span class="ru">
+                До упора, но без сильного напряжения
+            </span>
+        </div>
+    </div>
+    <div class="exercise height" data-time="20">
+      <div class="parent_animator diagonal"></div>
+        <div class="title">
+            <span class="ru">По диагонали</span>
+            <div class="timer"></div>
+        </div>
+        <div class="ex_text">
+            <span class="ru">
+                Смотрите по углам, точка покажет как
+            </span>
+        </div>
+    </div>
+    <div class="exercise height" data-time="10">
+        <div class="title">
+              <span class="ru">Помигайте глазами</span>
+            <div class="timer"></div>
+        </div>
+        <div class="ex_text">
+            <span class="ru">
+                Помигайте глазами или прикройте ладонями до сигнала
+            </span>
+        </div>
+    </div>
+    <div class="exercise height" data-time="20">
+      <div class="parent_animator circle"></div>
+        <div class="title">
+            <span class="ru">По часовой стрелке</span>
+            <div class="timer"></div>
+        </div>
+        <div class="ex_text">
+            <span class="ru">
+                Не спешите, делайте плавно
+            </span>
+        </div>
+    </div>
+    <div class="exercise height" data-time="20">
+      <div class="parent_animator romb"></div>
+        <div class="title">
+            <span class="ru">По ромбу</span>
+            <div class="timer"></div>
+        </div>
+        <div class="ex_text">
+            <span class="ru">Старайтесь делать не меньше четырёх витков</span>
+        </div>
+    </div>
+    <div class="exercise height" data-time="10">
+        <div class="title">
+            <span class="ru">Помигайте Глазами</span>
+            <div class="timer"></div>
+        </div>
+        <div class="ex_text">
+            <span class="ru">
+                Помигайте глазами или прикройте ладонями до сигнала
+            </span>
+        </div>
+    </div>
+    <div class="exercise height" data-time="20">
+        <div class="title">
+            <span class="ru">Вблизи-вдали</span>
+            <div class="timer"></div>
+        </div>
+        <div class="ex_text">
+            <span class="ru">Посмотрите на предмет вдали, потом — на монитор</span>
+        </div>
+    </div>
+    <div class="exercise height" data-time="15">
+        <div class="title">
+            <span class="ru">Расслабьтесь</span>
+
+            <div class="timer"></div>
+        </div>
+        <div class="ex_text">
+            <span class="ru">Закройте глаза, вы почти закончили</span>
+        </div>
+    </div>
+    <div class="last">
+        <div class="title">
+            <span class="ru">
+                Вы молодец! Теперь немного отдохните от компьютера. <br />Если не закроете вкладку, через час мы вам напомним про отдых.
+            </span>
+        </div>
+        <div class="ex_text">
+        </div>
+    </div>
+
+    <!-- Футер с кнопками поделиться -->
+    <div class="footer">
+        <div class="social-button">
+            <div class="likely likely-light">
+                <div class="twitter">Твитнуть</div>
+                <div class="facebook">Поделиться</div>
+                <div class="vkontakte">Поделиться</div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

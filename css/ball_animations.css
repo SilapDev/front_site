@@ -1,0 +1,241 @@
+
+.parent_animator:before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #fff;
+
+}
+
+.parent_animator.left_right:before {
+    top: 50%;
+    left: 0;
+    margin-top: -15px;
+    margin-left: -15px;
+    animation-name: left_right;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes left_right {
+    0% {
+        opacity: .1;
+        left: 50%;
+        top: 50%;
+    }
+    20% {
+        opacity: 1;
+        left: 0;
+    }
+    25% {
+        opacity: 1;
+        left: 0;
+    }
+    45% {
+        opacity: .1;
+        left: 50%;
+    }
+    50% {
+        opacity: .1;
+        left: 50%;
+    }
+    70% {
+        opacity: 1;
+        left: 100%;
+    }
+    75% {
+        opacity: 1;
+        left: 100%;
+    }
+    95% {
+        opacity: .1;
+        left: 50%;
+    }
+    100% {
+        opacity: .1;
+        left: 50%;
+    }
+}
+
+.parent_animator.up_down:before {
+    top: 0;
+    left: 50%;
+    margin-top: -15px;
+    margin-left: -15px;
+    animation-name: up_down;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes up_down {
+    0% {
+        opacity: .1;
+        left: 50%;
+        top: 50%;
+    }
+    20% {
+        opacity: 1;
+        top: 0;
+    }
+    25% {
+        opacity: 1;
+        top: 0;
+    }
+    45% {
+        opacity: .1;
+        top: 50%;
+    }
+    50% {
+        opacity: .1;
+        top: 50%;
+    }
+    70% {
+        opacity: 1;
+        top: 100%;
+    }
+    75% {
+        opacity: 1;
+        top: 100%;
+    }
+    95% {
+        opacity: .1;
+        top: 50%;
+    }
+    100% {
+        opacity: .1;
+        top: 50%;
+    }
+}
+
+.parent_animator.circle {
+    animation-name: circle;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.parent_animator.circle:before {
+    top: 10px;
+    left: 50%;
+}
+
+@keyframes circle {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.parent_animator.diagonal:before {
+    top: 100%;
+    left: 0;
+    margin-top: -15px;
+    margin-left: -15px;
+    animation-name: diagonal;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes diagonal {
+    0% {
+        top: 100%;
+        left: 0;
+        opacity: 1;
+    }
+    25% {
+        top: 0;
+        left: 0;
+        opacity: 1;
+    }
+    37.5% {
+        opacity: .1;
+    }
+    50% {
+        top: 100%;
+        left: 100%;
+        opacity: 1;
+    }
+    75% {
+        top: 0;
+        left: 100%;
+        opacity: 1;
+    }
+    87.5% {
+        opacity: .1;
+    }
+    100% {
+        top: 100%;
+        left: 0;
+        opacity: 1;
+    }
+}
+
+.parent_animator.romb:before {
+    top: 50%;
+    left: 15%;
+    opacity: 1;
+    animation-name: romb;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes romb {
+    0% {
+        top: 10%;
+        left: 50%;
+        opacity: 0.5;
+    }
+    25%{
+        top: 50%;
+        left: 85%;
+        opacity: 1;
+    }
+    50% {
+        top: 90%;
+        left: 50%;
+        opacity: 0.5;
+    }
+    75%{
+        top: 50%;
+        left: 15%;
+        opacity: 1;
+    }
+    100%{
+        top: 10%;
+        left: 50%;
+        opacity: 0.5;
+    }
+}
+
+.parent_animator.relax:before {
+    top: 50%;
+    left: 50%;
+    margin-top: -15px;
+    margin-left: -15px;
+    opacity: 0.5;
+    animation-name: relax;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes relax {
+    0% {
+        transform: scale(1);
+        opacity: 0.5;
+    }
+
+    20% {
+        transform: scale(1.5);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 0.5;
+    }
+}
